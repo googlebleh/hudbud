@@ -4,7 +4,7 @@
 	// ============================================================================================== //
 	// More will be added in the future
 	////////////////////////////////////////////////////////////////////////////////////////////////////
-	#base	"bh_Lato.res"
+	#base	"bh_Ubuntu.res"
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// User Customization
@@ -66,6 +66,12 @@ Scheme
 		{
 			"font"	"resource/fonts/Lato-Semibold.ttf"
 			"name"	"Lato Semibold"
+		}
+		
+		"15" // My Custom Font
+		{
+			"font"	"/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-R.ttf"
+			"name"	"Ubuntu"
 		}
 	}
 }
