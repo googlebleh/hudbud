@@ -7,11 +7,13 @@
 	{
 		Animate			PlayerStatusHealthBonusImage 				Alpha			"255"					Linear 0.0 0.2
 		Animate			PlayerStatusHealthBonusImage 				Alpha			"0"						Linear 0.2 0.4
-		Animate 		PlayerStatusHealthValue						fgcolor			"bh_HealthBuff"			Linear 0.0 0.3
-		Animate 		PlayerStatusHealthValueSpectator 			fgcolor 		"bh_HealthBuff" 		Accel 0.0 0.0 
-		Animate 		PlayerStatusHealthValueFreezePanel 			fgcolor 		"bh_HealthBuff" 		Accel 0.0 0.0 
-	
-		RunEvent 		HudHealthBonusPulseLoop						0.4
+		Animate 		PlayerStatusHealthValue						fgcolor			"bh_white"				Linear 0.0 0.3
+		Animate 		PlayerStatusHealthValueSpectator 			fgcolor 		"bh_white" 				Linear 0.0 0.0 
+		Animate 		PlayerStatusHealthValueFreezePanel 			fgcolor 		"bh_white" 				Linear 0.0 0.0
+		Animate 		bh_HPBGSpec									Alpha			"255"					Linear 0.0 0.3
+		Animate 		bh_HPBGSpec									BgColor			"bh_HealthBuff_t"		Linear 0.0 0.3
+
+		RunEvent 		HudHealthBonusPulseLoop						0.2
 	}
 	
 	// call to loop HudHealthBonusPulse
@@ -25,8 +27,9 @@
 		StopEvent 		HudHealthBonusPulse							0.0
 		StopEvent 		HudHealthBonusPulseLoop 					0.0
 		Animate 		PlayerStatusHealthValue		 				fgcolor			"bh_Health"				Linear 0.0 0.0
-		Animate 		PlayerStatusHealthValueSpectator 			fgcolor 		"bh_Health" 			Accel 0.0 0.0 
-		Animate 		PlayerStatusHealthValueFreezePanel 			fgcolor 		"bh_Health"				Accel 0.0 0.0 
+		Animate 		PlayerStatusHealthValueSpectator 			fgcolor 		"bh_Health" 			Linear 0.0 0.0 
+		Animate 		PlayerStatusHealthValueFreezePanel 			fgcolor 		"bh_Health"				Linear 0.0 0.0 
+		Animate 		bh_HPBGSpec									BgColor			"bh_HealthBG_t"			Linear 0.0 0.0
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,9 +39,10 @@
 	{
 		Animate			PlayerStatusHealthBonusImage 				Alpha			"255"					Linear 0.0 0.075
 		Animate			PlayerStatusHealthBonusImage 				Alpha			"0"						Linear 0.125 0.075
-		Animate 		PlayerStatusHealthValue						fgcolor			"bh_HealthLow"			Linear 0.0 0.2
+		Animate 		PlayerStatusHealthValue						fgcolor			"bh_Health"				Linear 0.0 0.3
+		Animate 		bh_HPBGSpec									BgColor			"bh_HealthLow_t"		Linear 0.0 0.3
 		
-		RunEvent 		HudHealthDyingPulseLoop	0.01
+		RunEvent 		HudHealthDyingPulseLoop	0.2
 	}
 	
 	// call to loop HudHealthDyingPulse

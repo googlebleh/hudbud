@@ -4,12 +4,10 @@
 	
 	event CompetitiveGame_LowerChatWindow
 	{
-		Animate 		HudChat								ypos 5			Accel 0 0
 	}
 	
 	event CompetitiveGame_RestoreChatWindow
 	{
-		Animate 		HudChat 							ypos 5 			Accel 0 0
 	}
 	
 	event HudTournament_MoveChatWindow
@@ -42,9 +40,9 @@
 	
 	event HudSnapShotReminderIn
 	{
-		RunEvent HudHealthDyingPulseStop 0.0
-		RunEvent HudHealthBonusPulseStop 0.0
-		RunEvent HudLowAmmoPulseStop 0.0
-		RunEvent HudMedicChargedStop 0.0
+		RunEvent 		HudHealthDyingPulseStop 		0.0
+		RunEvent 		HudHealthBonusPulseStop 		0.0
+		RunEvent 		HudLowAmmoPulseStop 			0.0
+		RunEvent 		HudMedicChargedStop 			0.0
 	}
 	

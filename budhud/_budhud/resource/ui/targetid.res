@@ -48,11 +48,11 @@
 		
 	}	
 	
-	"bh_TargetBG"
+	"bh_TargetIDBG"
 	{
 		"ControlName" 												"ImagePanel"
-		"fieldName" 												"bh_TargetBG"
-		"xpos" 														"0"
+		"fieldName" 												"bh_TargetIDBG"
+		"xpos" 														"58"
 		"ypos" 														"15"
 		"zpos" 														"6"
 		"wide" 														"600"
@@ -63,13 +63,32 @@
 		"enabled" 													"1"
 		"fillcolor" 												"bh_BGStandard"
 	}
+
+	"bh_NameNav"
+	{	
+		"ControlName"												"Label"
+		"fieldName"													"bh_NameNav"
+		"xpos"														"120"
+		"ypos"														"14"
+		"zpos"														"0"
+		"wide"														"10"
+		"tall"														"0"
+		"visible"													"1"
+		"enabled"													"1"
+		"bgcolor_override"											"0 0 0 0"
+	}
 	
 	"TargetNameLabel"
 	{
-		"ypos"														"14"
-		"zpos"														"7"
+		"xpos"														"0"
+		"ypos"														"0"
+		"zpos"														"10"
 		"wide"														"300"
 		"tall"														"15"
+		
+		"pin_to_sibling" 											"bh_NameNav"
+		"pin_corner_to_sibling" 									"PIN_CENTERTOP"
+		"pin_to_sibling_corner" 									"PIN_CENTERTOP"
 	}
 	
 	"TargetDataLabel"
@@ -95,8 +114,9 @@
 	
 	"SpectatorGUIHealth"
 	{
-		"xpos"														"0"
+		"xpos"														"10"
 		"ypos"														"7"
+		"zpos"														"8"
 		"wide"														"48"
 		"tall"														"30"
 	}
